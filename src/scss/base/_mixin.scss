@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@mixin box-sizing {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin clear {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin radius($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin bg-size($size) {
+    -webkit-background-size: $size;
+    background-size: $size;
+}
+
+@mixin animation($animation, $duration, $delay) {
+    -webkit-animation-name: $animation;
+    -webkit-animation-duration: $duration;
+    -webkit-animation: forwards;
+    -webkit-animation-delay: $delay;
+    animation-name: $animation;
+    animation-duration: $duration;
+    animation-fill-mode: forwards;
+    animation-delay: $delay;
+}
+
+@mixin transition($property, $duration, $function, $delay) {
+    -webkit-transition-property: $property;
+    -webkit-transition-duration: $duration;
+    -webkit-transition-timing-function: $function;
+    -webkit-transition-delay: $delay;
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $function;
+    transition-delay: $delay;
+}
+
+@mixin float_ani($animation, $duration, $delay) {
+    -webkit-animation-name: $animation;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: $delay;
+    animation-name: $animation;
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+    animation-delay: $delay;
+}
+
+// 반응형
+@mixin mo {
+    @media(max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin mo320 {
+    @media(max-width: 374px) {
+        @content;
+    }
+}
