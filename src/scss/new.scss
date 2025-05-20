@@ -1,5 +1,5 @@
-@import 'base/reset';
-@import 'base/mixin';
-@import 'base/mixin_sprite';
+@use 'base/reset';
+@use 'base/mixin';
+@use 'base/mixin_sprite';
 
-@import 'import/common';
+@use 'import/common';

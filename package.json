@@ -6,26 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jihye990513/NEW.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jihye990513/NEW/issues"
-  },
-  "homepage": "https://github.com/jihye990513/NEW#readme",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-watch": "^0.1.0",
-    "sass": "^1.69.5",
-    "source-map": "^0.7.3"
-  },
   "devDependencies": {
-    "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp.spritesmith": "^6.13.0",
-    "gulpsmith": "^0.6.0"
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.4",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp.spritesmith": "^6.13.1",
+    "merge-stream": "^2.0.0",
+    "sass": "^1.32.13",
+    "vinyl-buffer": "^1.0.1"
   }
 }

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "../sprite/sp_all";
+@use "../sprite/sp_all" as *;
 
 $sprite-image: 'img/sp_all.png';
 
